@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Práctica 6</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-
-</head>
-<body>
-    <div class="contenedor">
-        <form action="valida.php" method="post">
-            <!-- invoca al php -->
-            <div id="div_login">
-                <h1>Login</h1>
-                <div>
-                    <input type="text" class="caja" name="user" id="user" placeholder="Usuario">
+    <link rel="stylesheet" type="text/css" href="./styles.css"> 
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="row justify-content-evenly mt-5">
+        <div class="col-md-3 mb-5"></div>
+        <div class="col-md-3 mb-5">
+            <form action="valida.php" method="post">
+                <div class="card">
+                  <div class="card-body">
+                    <div id="div_login">
+                      <h5 class="card-title">Iniciar sesión</h5>
+                      <hr>
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                              </svg>
+                        </span>
+                        <input
+                          type="text"
+                          name="user"
+                          id="user"
+                          placeholder="Usuario"
+                          class="form-control"
+                        />
+                      </div>
+        
+                      <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+                                <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+                                <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                              </svg>
+                        </span>
+                        <input
+                          type="password"
+                          name="pass"
+                          id="pass"
+                          placeholder="Contraseña"
+                          class="form-control"
+                        />
+                      </div>
+                      <div class="d-grid gap-2">
+                        <input
+                          type="submit"
+                          value="Entrar"
+                          id="btm"
+                          class="btn btn-primary"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                
-                <div>
-                    <input type="password" class="caja" name="pass" id="pass" placeholder="Contraseña">
-                </div>
-                <div>
-                    <input type="submit" value="Login" id="btm">
-                </div>
-            </div>
-        </form>
+                <!-- invoca al php -->
+              </form>
+        </div>
+        <div class="col-md-3 mb-5"></div>
     </div>
-
-</body>
+  </body>
 </html>
